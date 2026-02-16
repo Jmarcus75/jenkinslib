@@ -1,3 +1,4 @@
+
 #!/usr/bin/env groovy
 
 import groovy.json.*
@@ -8,10 +9,8 @@ def call(body) {
     body.delegate          = mapVars
     body()
 
-		def name = mapVars.name
-		def action = mapVars.action
+		def name = maVars.name
+		def action = maVars.action
 
-#	  println( action + " " + name + "!!")
-	 println( action + " " + name + "...")
-
+	  println( action + " " + name + "...")
 }
